@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- nameSpace에 풀패키지 명을 적어준다 -->
+<mapper namespace="com.study.my.b_insert.mapper.Main_Mapper">
+<!-- id는 nameSpace에 명명된 인터페이스 매소드명과 일치 시킨다 -->
+	
+	<!-- 사원 명단 가져오기 -->
+	<select id="getNames_SELECT"
+		resultType="com.study.my.b_insert.vo.GetStaff_VO">
+			SELECT * FROM members
+	</select>
+	
+	
+	
+	
+</mapper>
+
+
+

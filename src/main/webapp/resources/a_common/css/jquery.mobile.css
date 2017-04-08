@@ -1,0 +1,117 @@
+/* Resolves issue #5756: Textinput in IE10 has a default clear button */
+.ui-flipswitch {
+	display: inline-block;
+	vertical-align: middle;
+	width: 5.875em; /* Override this and padding-left in next rule if you use labels other than "on/off" and need more space */
+	height: 1.875em;
+	border-width: 1px;
+	border-style: solid;
+	margin: .5em 0;
+	overflow: hidden;
+	-webkit-transition-property: padding, width, background-color, color, border-color;
+	-moz-transition-property: padding, width, background-color, color, border-color;
+	-o-transition-property: padding, width, background-color, color, border-color;
+	transition-property: padding, width, background-color, color, border-color;
+	-webkit-transition-duration: 100ms;
+	-moz-transition-duration: 100ms;
+	-o-transition-duration: 100ms;
+	transition-duration: 100ms;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	cursor: pointer;
+}
+.ui-flipswitch.ui-flipswitch-active {
+	padding-left: 4em;  /* Override this and width in previous rule if you use labels other than "on/off" and need more space */
+	width: 1.875em;
+}
+.ui-flipswitch-input {
+	position: absolute;
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(1px,1px,1px,1px);
+	border: 0;
+	outline: 0;
+	filter: Alpha(Opacity=0);
+	opacity: 0;
+}
+.ui-flipswitch .ui-btn.ui-flipswitch-on,
+.ui-flipswitch .ui-flipswitch-off {
+	float: left;
+	height: 1.75em;
+	margin: .0625em;
+	line-height: 1.65em;
+}
+.ui-flipswitch .ui-btn.ui-flipswitch-on {
+	width: 1.75em;
+	padding: 0;
+	text-indent: -2.6em; /* Override this to center text if you use a label other than "on" */
+	text-align: left;
+	border-width: 1px;
+	border-style: solid;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border-radius: inherit;
+	overflow: visible;
+	color: inherit;
+	text-shadow: inherit;
+}
+.ui-flipswitch .ui-flipswitch-off {
+	padding: 1px;
+	text-indent: 1em; /* Override this to center text if you use a label other than "off" */
+}
+
+
+
+/* Active flipswitch background */
+.ui-page-theme-a .ui-flipswitch-active,
+html .ui-bar-a .ui-flipswitch-active,
+html .ui-body-a .ui-flipswitch-active,
+html body .ui-group-theme-a .ui-flipswitch-active,
+html body .ui-flipswitch.ui-bar-a.ui-flipswitch-active,
+/* Active slider track */
+.ui-page-theme-a .ui-slider-track .ui-btn-active,
+html .ui-bar-a .ui-slider-track .ui-btn-active,
+html .ui-body-a .ui-slider-track .ui-btn-active,
+html body .ui-group-theme-a .ui-slider-track .ui-btn-active,
+html body div.ui-slider-track.ui-body-a .ui-btn-active {
+	background-color: 		#3388cc /*{a-active-background-color}*/;
+	border-color:	 		#cbcbcb /*{a-active-border}*/;
+	color: 					#fff /*{a-active-color}*/;
+	text-shadow: 0 -1px 1px  #f8f8f8;
+}
+
+
+/* Active flipswitch background */
+.ui-page-theme-b .ui-flipswitch-active,
+html .ui-bar-b .ui-flipswitch-active,
+html .ui-body-b .ui-flipswitch-active,
+html body .ui-group-theme-b .ui-flipswitch-active,
+html body .ui-flipswitch.ui-bar-b.ui-flipswitch-active,
+/* Active slider track */
+.ui-page-theme-b .ui-slider-track .ui-btn-active,
+html .ui-bar-b .ui-slider-track .ui-btn-active,
+html .ui-body-b .ui-slider-track .ui-btn-active,
+html body .ui-group-theme-b .ui-slider-track .ui-btn-active,
+html body div.ui-slider-track.ui-body-b .ui-btn-active {
+	background-color: 		#22aadd /*{b-active-background-color}*/;
+	border-color:	 		#22aadd /*{b-active-border}*/;
+	color: 					#fff /*{b-active-color}*/;
+	text-shadow: 0 /*{b-active-shadow-x}*/ 1px /*{b-active-shadow-y}*/ 0 /*{b-active-shadow-radius}*/ #0088bb /*{b-active-shadow-color}*/;
+}
+
+
+.ui-field-contain .ui-flipswitch.ui-flipswitch-active,
+.ui-popup .ui-field-contain .ui-flipswitch.ui-flipswitch-active {
+	width: 1.875em;
+}
+
+.ui-field-contain .ui-flipswitch.ui-flipswitch-active,
+.ui-popup .ui-field-contain .ui-flipswitch.ui-flipswitch-active {
+	width: 1.875em;
+}
